@@ -1,9 +1,76 @@
 {% extends "../base/base.html" %} {% block title %}Report{% endblock %}
 <!-- Block Liner -->
+{% load static %}
 {%block content%}
-<!-- Ngoding disini -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">GIVE US RATING</button>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex ml-auto align-items-center">
+            <span class="mx-2">Nama Akun</span>
+            <img src="{% static 'NoveltyChecker/images/user.png'%}" alt="Account Logo" width="30" height="30">
+          </div>          
+      </div>
+    </div>
+  </nav>
 
-<h1>Hello World ini di Report</h1>
-
-<!-- Batas bawah ngoding -->
+  <div class="container d-flex justify-content-center align-items-center"style="height: 85vh;">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card mb-4" style="width: 13rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">NOVELTY GRADE</h5>
+                </div>
+                <img src="{% static 'NoveltyChecker/images/4.png'%}" class="card-img-top" alt="..." >
+            </div>
+            <div class="card" style="width: 13rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">SIMILARITY</h5>
+                </div>
+                <img src="{% static 'NoveltyChecker/images/sim.png'%}" class="card-img-top" alt="..." >
+            </div>
+        </div>
+    <div class="col-sm-8">
+        <div class="card mb-4" style="width: 55rem;">
+            <div class="card-body">
+                <h5 class="card-title">JUDUL JURNAL</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 55rem;">
+            <div class="card-body">
+                <h5 class="card-title">ABSTRACT</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="text-right pb-3">
+            <a href="#">List Recommendation &raquo;</a>
+        </div>
+    </div> 
+     
+ </div>
 {% endblock %}
