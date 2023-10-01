@@ -40,14 +40,15 @@
 									
                                     </div>
                                     <div class="d-flex justify-content-center mb-4">
+										<a href="{% url 'search' %}">
                                         <button type="submit" class="btn btn-info px-4"  data-bs-toggle="modal" data-bs-target="#confirmation">
                                             Log In	
-                                        </button>
+                                        </button></a>
                                     </div>
 
 									<div class="card-footer py-3 border-0">
 										<div class="text-center">
-											Don't have an account ? <a href="index.html" class="text-dark">Register</a>
+											Don't have an account ? <a href="{% url 'register' %}" class="text-dark">Register</a>
 										</div>
 									</div>
                             </div>
