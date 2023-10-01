@@ -5,7 +5,17 @@
 
 <!-- Ngodingnya disini -->
 
-<body style="background: #412A6E url(images/Landing.png) no-repeat;" >
+<head>
+    <style>
+        body {
+            background-image: url("{% static 'NoveltyChecker/images/Landing.png'  %}");
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- <img src="{% static 'NoveltyChecker/images/Landing.png'%}" alt="Account Logo"> -->
 
     <div class="container-fluid py-4">
         <div class="container">
@@ -21,7 +31,8 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-5 offset-1" style="margin-top: 160px; width: 508px; height: 445px; border: 2px solid #fff;"></div>
+                <div class="col-5 offset-1" style="margin-top: 100px; width: 508px; height: 445px;">
+                    <img src="{% static 'NoveltyChecker/images/Layer2.png'%}" class="card-img-top" alt="..." ></div>
                 <div class="col-5 offset-1" style="color: white;">
                     <div style="font-size: 60px;">
                         <b>
