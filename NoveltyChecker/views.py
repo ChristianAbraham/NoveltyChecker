@@ -22,3 +22,5 @@ def searchResult(request):
 def search(request):
     return render(request, "NoveltyChecker/search.html")
 
+def feedback(request):
+    return render(request,"NoveltyChecker/feedback.html")
