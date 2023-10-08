@@ -9,5 +9,6 @@ urlpatterns = [
     path("report/", views.report, name="report"),
     path("search-result/", views.searchResult, name="searchResult"),
     path("search/", views.search, name="search"),
-    path("feedback/", views.feedback, name="feedback")
+    path("feedback/", views.feedback, name="feedback"),
+    path("adminfeedback/", views.adminfeedback, name="adminfeedback")
 ]
