@@ -24,3 +24,6 @@ def search(request):
 
 def feedback(request):
     return render(request,"NoveltyChecker/feedback.html")
+
+def adminfeedback(request):
+    return render(request,"NoveltyChecker/adminfeedback.html")
